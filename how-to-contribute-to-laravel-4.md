@@ -10,7 +10,7 @@ This is the first step and by far the most overlooked one. Some times, a bug you
 
 Often enough, the reason behind a bug is an update to one of these 3rd party plugins or packages and your code breaks because it's not compatible anymore. In a lot of cases, [people get issues from a composer update](https://github.com/laravel/framework/issues/598) because [they forgot to update their client side Laravel installation](https://github.com/laravel/framework/issues/708).
 
-A good thing to keep your client side up to date is to clone it from Github and use the Laravel client side repo as an upstream branch instead of downloading it. If you have no idea what I mean by what I just said I suggest you read this awesome post from **[Niall O'Brien](https://twitter.com/niall_obrien)** about installing and updating Laravel 4.
+A good thing to keep your client side up to date is to clone it from Github and use the Laravel client side repo as an upstream branch instead of downloading it. If you have no idea what I mean by what I just said I suggest you read [this awesome post](http://niallobrien.me/2013/03/installing-and-updating-laravel-4/) from **[Niall O'Brien](https://twitter.com/niall_obrien)** about installing and updating Laravel 4.
 
 Something that people often neglect to do is actually read the error message they get from a bug. Read the error message because the answer could be hidden in it.
 
