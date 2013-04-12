@@ -76,7 +76,7 @@ Before you commit anything you should try to run PHPunit to make sure the unit t
 
 If you're implementing a feature or fixing a bug never forget to check if it affects changes to the client side as well. If it does, try to reference the pull request that goes alongside in the [laravel/laravel](https://github.com/laravel/laravel/tree/develop) repo on Github in your pull request on [laravel/framework](https://github.com/laravel/framework).
 
-# When you're done with implementing, commit your changes (or commit it in pieces if it's a rather large feature). Before you commit your changes, make sure your code is coded according to [the Laravel coding standards](http://four.laravel.com/docs/contributing#coding-guidelines). Also, if you're fixing an issue which is in the Github issue queue, reference it in the commit title by saying: `Fixes #XX` (with `#XX` being changed to the actual issue number, of course). This will make sure the issue gets automatically closed when your pull request gets accepted.
+When you're done with implementing, commit your changes (or commit it in pieces if it's a rather large feature). Before you commit your changes, make sure your code is coded according to [the Laravel coding standards](http://four.laravel.com/docs/contributing#coding-guidelines). Also, if you're fixing an issue which is in the Github issue queue, reference it in the commit title by saying: `Fixes #XX` (with `#XX` being changed to the actual issue number, of course). This will make sure the issue gets automatically closed when your pull request gets accepted.
 
 Didn't forget your unit tests? Good! Let's proceed.
 
