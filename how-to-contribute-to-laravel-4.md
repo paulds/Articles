@@ -54,7 +54,7 @@ The next step should be forking the repository to your personal Github account. 
 
 When it's done forking the repo, clone the repository to your local development machine.
 
-  $ git clone <github url to your cloned repo> <directory>
+	$ git clone <github url to your cloned repo> <directory>
 
 Next, let's create a separate branch to work on. If it's a bug fix, prefix it to `bugfix/`. If it's a proposed feature, prefix it to `feature/`.
 
