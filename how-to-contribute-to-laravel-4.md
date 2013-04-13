@@ -1,8 +1,8 @@
 # How To Contribute To Laravel 4
 
-So a lot of people are submitting issues these days to [the Laravel 4 Framework repository](https://github.com/laravel/framework). Sometimes there's a pull request with code attached to fix a certain bug or to improve the framework by adding new functionality. I'll go over each step to submit a successful issue or pull request to the Laravel 4 repo and help you contribute to the framework.
+A lot of people are submitting issues these days to [the Laravel 4 Framework repository](https://github.com/laravel/framework). Sometimes there's a pull request with code attached to fix a certain bug or to improve the framework by adding new functionality. I'll go over each step to submit a successful issue or pull request to the Laravel 4 repo and help you contribute to the framework.
 
-Before we begin I really recommend your check out [this video](https://tutsplus.com/lesson/contributing-to-the-framework/) by **[Jeffrey Way](https://twitter.com/jeffrey_way)** which goes over the basic steps of submitting a pull request to Laravel 4. The video is less detailed than this post but it gives a good view on the basics.
+Before we begin I really recommend you check out [this video](https://tutsplus.com/lesson/contributing-to-the-framework/) by **[Jeffrey Way](https://twitter.com/jeffrey_way)** which goes over the basic steps of submitting a pull request to Laravel 4. The video is less detailed than this post but it gives a good view on the basics.
 
 ## Make sure it's a framework bug
 
@@ -10,11 +10,11 @@ This is the first step and by far the most overlooked one. Some times, a bug you
 
 Often enough, the reason behind a bug is an update to one of these 3rd party plugins or packages and your code breaks because it's not compatible anymore. In a lot of cases, [people get issues from a composer update](https://github.com/laravel/framework/issues/598) because [they forgot to update their client side Laravel installation](https://github.com/laravel/framework/issues/708).
 
-A good thing to keep your client side up to date is to clone it from Github and use the Laravel client side repo as an upstream branch instead of downloading it. If you have no idea what I mean by what I just said I suggest you read [this awesome post](http://niallobrien.me/2013/03/installing-and-updating-laravel-4/) from **[Niall O'Brien](https://twitter.com/niall_obrien)** about installing and updating Laravel 4.
+A good way to keep your client side up to date is to clone it from Github and use the Laravel client side repo as an upstream branch instead of downloading it. If this is not entirely clear to you I suggest you read [this awesome post](http://niallobrien.me/2013/03/installing-and-updating-laravel-4/) from **[Niall O'Brien](https://twitter.com/niall_obrien)** about installing and updating Laravel 4.
 
 Something that people often neglect to do is actually read the error message they get from a bug. Read the error message because the answer could be hidden in it.
 
-Always do your research properly before rushing off to the issue button.
+Always do your research properly before clicking the issue button.
 
 ## Is the new feature actually necessary?
 
@@ -42,7 +42,7 @@ If you feel that you found a way to solve a bug then you can do two things. If i
 
 When you want to have a new feature in Laravel you can take 2 paths: propose a feature or request a feature.
 
-If you're proposing a feature you mean to actually implement it yourself. You should create a Github issue with [Proposal] in the title. Try to be as descriptive as possible on what you're trying to improve, how it will help users (use cases!) and how you plan to implement it into the framework. If your proposal gets approved by Taylor, you can go ahead and create an implementation and submit a Pull Request. Don't forget that it's alway possible that Taylor will go ahead and implement it himself if he feels he already found a (better) way to do so. Don't let it discourage you though! You just proposed a valid feature for Laravel 4 and should be proud on that :)
+If you're proposing a feature you intend to implement yourself, you should create a Github issue with [Proposal] in the title. Try to be as descriptive as possible on what you're trying to improve, how it will help users (use cases!) and how you plan to implement it into the framework. If your proposal gets approved by Taylor, you can go ahead and create an implementation and submit a Pull Request. Don't forget that it's always possible that Taylor will go ahead and implement it himself if he feels he already found a (better) way to do so. Don't let it discourage you though! You just proposed a valid feature for Laravel 4 and should be proud on that :)
 
 Else if you're just requesting a feature but don't plan on implementing it yourself you should create an issue with [Request] in the title. Again, like a proposal, try to tell how it would improve the framework and provide some use cases.
 
@@ -76,7 +76,7 @@ Before you commit anything you should try to run PHPunit to make sure the unit t
 
 If you're implementing a feature or fixing a bug never forget to check if it affects changes to the client side as well. If it does, try to reference the pull request that goes alongside in the [laravel/laravel](https://github.com/laravel/laravel/tree/develop) repo on Github in your pull request on [laravel/framework](https://github.com/laravel/framework).
 
-When you're done with implementing, commit your changes (or commit it in pieces if it's a rather large feature). Before you commit your changes, make sure your code is coded according to [the Laravel coding standards](http://four.laravel.com/docs/contributing#coding-guidelines). Also, if you're fixing an issue which is in the Github issue queue, reference it in the commit title by saying: `Fixes #XX` (with `#XX` being changed to the actual issue number, of course). This will make sure the issue gets automatically closed when your pull request gets accepted.
+When you're done with implementing, commit your changes (or commit it in pieces if it's a rather large feature). Before you commit your changes, make sure your code adheres to the [the Laravel coding standards](http://four.laravel.com/docs/contributing#coding-guidelines). Also, if you're fixing an issue which is in the Github issue queue, reference it in the commit title by saying: `Fixes #XX` (with `#XX` being changed to the actual issue number, of course). This will make sure the issue gets automatically closed when your pull request gets accepted.
 
 Didn't forget your unit tests? Good! Let's proceed.
 
@@ -84,7 +84,7 @@ Didn't forget your unit tests? Good! Let's proceed.
 
 This is something I don't think much people know that they can do before submitting their Pull Request. [Travis-ci](https://travis-ci.org) is a free service which runs a `.travis.yml` file in your project and basically runs all your unit tests. It sends you an e-mail notification on wether your builds have failed, passed or didn't finish for some reason. This means there's a better chance at catching bugs before the pull request will be made. You don't have to do a thing but push to your forked repo and Travis will automatically start a new build. Just wait for the e-mail notification or check on [travis-ci.org](https://travis-ci.org) if your build has finished to know if your unit tests failed or succeeded.
 
-Now how do you set it up with your forked repo? It's pretty easy actually. Go to [travis-ci.org/profile](https://travis-ci.org/profile), set Travis to "ON" for your forked repo and click on the wrench icon next to it. Travis will automatically set up a service hook in your Github repo's settings. Whenever you push to Github or publish a branch, Travis will start a new build and send you and an e-mail notification when it’s finished. 
+Now how do you set it up with your forked repo? It's pretty easy actually. Go to [travis-ci.org/profile](https://travis-ci.org/profile), set Travis to "ON" for your forked repo and click on the wrench icon next to it. Travis will automatically set up a service hook in your Github repo's settings. Whenever you push to Github or publish a branch, Travis will start a new build and send you an e-mail notification when it’s finished. 
 
 Should your build fail you can do a couple of things. You could try to fix your code, commit again and push to your Pull Request branch again and start a new build but I prefer to do  it a little different. I'll just delete the Pull Request branch on Github, roll back some of my commits on my local development repo and commit again with the fixed code to keep the commits minimal and the Pull Request as small as possible. I suggest you do the same to prevent the Pull Request from growing so large with commits which are just attempts at fixing the unit tests.
 
